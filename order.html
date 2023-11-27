@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stylesheet/crafting.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./stylesheet/crafting.js"></script>
 </head>
 
 <body>
@@ -54,7 +55,6 @@
                             Provide First Name
                         </div>
 
-
                         <label for="lnameField" class="form-label"> * Last Name: </label>
                         <input class="form-control" type="text" id="lnameField" name="lnameField" required>
                         <div class="valid-feedback">
@@ -72,16 +72,14 @@
                         <div class="invalid-feedback">
                             Provide email
                         </div>
+                        
+                        <div id="add-product">
+                            <label for="newproduct" class="form-label">* Product: </label>
+                            <input type="text" id="newproduct">
+                            <button type="button" id="add">Add</button>               
+                        </div>
 
-                        <label for="dateField">Arrival Date: </label>
-                        <input class="form-control" type="date" id="dateField" name="dateField">
-
-                        <label for="nightsField">Nights: </label>
-                        <input class="form-control" type="number" id="nightsField" name="nightsField" min="1" max="14">
-
-                        <label for="commentsField"> Comments: </label>
-                        <textarea class="form-control" id="commentsField" name="commentsField" rows="2"
-                            cols="20"></textarea>
+                        
 
                         <div class="col-md-4 mb-3">
                             <input class="btn btn-primary" type="submit" value="Submit form">

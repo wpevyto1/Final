@@ -16,7 +16,7 @@ body {
 .container {
 
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
   }
 
@@ -53,11 +53,15 @@ main {
     align-items: center;
     height: 100vh;
   }
+
   
-  .main-wrapper {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  .row {
     justify-content: center;
+  }
+
+  .card-body a{
+    text-align: center;
+    display: block;
+    color: black;
+    font-size: large;
   }
