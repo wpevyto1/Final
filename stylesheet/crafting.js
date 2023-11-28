@@ -12,9 +12,11 @@ function validateInfo() {
     let lNameInput = document.getElementById('lnameField');
     let eMail = document.getElementById('emailField').value;
     let eMailInput = document.getElementById('emailField');
-    let dateInput = document.getElementById('dateField');
-    let nightsInput = document.getElementById('nightsField');
-    let commentsInput = document.getElementById('commentsField');
+    let address = document.getElementById('inputAddress');
+    let city =  document.getElementById('inputCity');
+    let state = document.getElementById('inputState');
+    let zipcode = document.getElementById('inputZip');
+
     
     if (fName.trim() === '') {
         fNameInput.classList.add('is-invalid');
@@ -35,9 +37,10 @@ function validateInfo() {
         eMailInput.classList.add('is-valid');
     }
 
-    dateInput.classList.add('is-valid');
-    nightsInput.classList.add('is-valid');
-    commentsInput.classList.add('is-valid');
+    address.classList.add('is-valid');
+    city.classList.add('is-valid');
+    state.classList.add('is-valid');
+    zipcode.classList.add('is-valid');
 
     isValid = document.querySelectorAll('.is-invalid').length === 0;
 

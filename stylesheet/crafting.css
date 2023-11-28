@@ -11,10 +11,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
 .container {
-
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -41,11 +41,10 @@ header {
     font-family: cursive;
     font-size: 20px;
     margin: 0 40px;
+    font-weight:bolder;
   }
 
-  .transparent-navbar {
-    background-color: transparent; /* Set the background color to transparent */
-}
+
 
 main {
     display: flex;
@@ -64,4 +63,12 @@ main {
     display: block;
     color: black;
     font-size: large;
+  }
+
+  .form-label {
+    font-weight: bolder;
+  }
+
+  .form-check-label {
+    font-weight: bolder;
   }
