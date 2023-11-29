@@ -72,3 +72,29 @@ main {
   .form-check-label {
     font-weight: bolder;
   }
+
+  .display-none {
+    display: none;
+}
+
+table.pricing {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 80%;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+table.pricing .price {
+    text-align: right;
+}
+
+table.pricing tr:last-child {
+    border-top: thin solid;
+}
+
+.custom-input {
+    max-width: 300px;
+    margin: 0;
+  }

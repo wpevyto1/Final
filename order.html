@@ -12,6 +12,7 @@
     <script src="./stylesheet/crafting.js"></script>
     <script src="./stylesheet/state.js"></script>
     <script src="./stylesheet/ordercount.js"></script>
+    <script src="./stylesheet/ordermath.js"></script>
 
 </head>
 
@@ -41,7 +42,21 @@
         </nav>
 
         <main>
+            
             <div class="container">
+                <div id="price-result" class="display-none">
+                    <table class="pricing">
+                      <tr>
+                        <td>Total before tax:</td> <td id="price-value" class="price"></td>
+                      </tr>
+                      <tr>  
+                        <td>Taxes and fees:</td> <td id="taxes-value" class="price"></td>
+                      </tr>
+                      <tr>
+                        <td>Total:</td> <td id="total-value" class="price"></td>
+                      </tr>
+                    </table>
+                </div>
                 <p>Required information is marked with an asterisk (*).</p>
                 <form class="needs-validation row g-3" novalidate method="post" onsubmit="return validateInfo()">
                     <div class="col-md-6">
@@ -76,7 +91,6 @@
                         <label for="inputState" class="form-label">State</label>
                         <select id="inputState" class="form-select">
                             <option selected>Select State</option>
-                            <option>.</option>
                         </select>
                     </div>
                     <div class="col-md-2">
@@ -96,36 +110,49 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckGiraffe">
                         <label class="form-check-label" for="flexCheckGiraffe">Giraffe</label>
-                        <div id="giraffeInput" class="display-none">
-                            <input type="text" class="form-control" id="numOfGiraffeInput">
+                        <div id="GiraffeInput" class="display-none">
+                            <input type="text" class="form-control custom-input" id="numOfGiraffeInput" placeholder="Insert desired number">
                         </div>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckElephant">
                         <label class="form-check-label" for="flexCheckElephant">Elephant</label>
+                        <div id="ElephantInput" class="display-none">
+                            <input type="text" class="form-control custom-input" id="numOfElephantInput" placeholder="Insert desired number">
+                        </div>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckZebra">
                         <label class="form-check-label" for="flexCheckZebra">Zebra</label>
+                        <div id="ZebraInput" class="display-none">
+                            <input type="text" class="form-control custom-input" id="numOfZebraInput" placeholder="Insert desired number">
+                        </div>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckSloth">
                         <label class="form-check-label" for="flexCheckSloth">Sloth</label>
+                        <div id="SlothInput" class="display-none">
+                            <input type="text" class="form-control custom-input" id="numOfSlothInput" placeholder="Insert desired number">
+                        </div>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckRacoon">
                         <label class="form-check-label" for="flexCheckRacoon">Racoon</label>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label" for="flexSwitchCheckDefault">Expedited Order</label>
+                        <div id="RacoonInput" class="display-none">
+                            <input type="text" class="form-control custom-input" id="numOfRacoonInput" placeholder="Insert desired number">
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Order</button>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="ExpeditedSwitchCheck">
+                            <label class="form-check-label" for="ExpeditedSwitchCheck">Expedited Order: Additional $20.00</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button id="price-button" type="submit" class="btn btn-primary">Order</button>
                     </div>
                 </form>
+
             </div>
         </main>
     </div>
