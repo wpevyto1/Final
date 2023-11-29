@@ -1,0 +1,24 @@
+
+
+Bootstrap
+
+    about.html
+        Images
+            Line: 40-42
+
+                <div class="image-container">
+                    <img src="./images/kaitlyn.JPG" class="img-fluid rounded" alt="...">
+                </div>
+
+    products.html
+        Card
+            Line: 39 - 86
+
+        
+    order.html
+        Forms: gutters
+            Line: 67 - 115
+
+        Form-check
+            Line: 166 - 156
+        
