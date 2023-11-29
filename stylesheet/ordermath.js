@@ -20,6 +20,9 @@ function DisplayTotal() {
     // Expedited checkbox
     let ExpiditedOrder = document.getElementById('ExpeditedSwitchCheck').checked;
 
+    //Price list
+    let priceResult = document.getElementById('price-result');
+
     if (checkedGiraffe) {
         cost += 25.00 * GiraffeinputField;
     }
@@ -50,6 +53,8 @@ function DisplayTotal() {
     document.getElementById('price-value').textContent = "$" + cost.toFixed(2);
     document.getElementById('taxes-value').textContent = "$" + taxes.toFixed(2);
     document.getElementById('total-value').textContent = "$" + total.toFixed(2);
+
+
 
     priceResult.classList.remove('display-none');
 }
