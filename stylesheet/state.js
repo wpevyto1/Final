@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', populateStates);
+
 const states = [
     'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut',
     'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas',
@@ -17,5 +19,3 @@ function populateStates() {
         select.appendChild(option);
     });
 }
-
-document.addEventListener('DOMContentLoaded', populateStates);
