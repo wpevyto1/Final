@@ -2,13 +2,14 @@
 
 Bootstrap
 
+    index.html
+        Carousel
+            Line: 47-90
+    
     about.html
         Images
             Line: 40-42
 
-                <div class="image-container">
-                    <img src="./images/kaitlyn.JPG" class="img-fluid rounded" alt="...">
-                </div>
 
     products.html
         Card
